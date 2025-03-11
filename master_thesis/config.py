@@ -2,6 +2,7 @@ from pathlib import Path
 
 from dotenv import load_dotenv
 from loguru import logger
+import pickle
 
 # Load environment variables from .env file if it exists
 load_dotenv()
@@ -30,3 +31,41 @@ try:
     logger.add(lambda msg: tqdm.write(msg, end=""), colorize=True)
 except ModuleNotFoundError:
     pass
+
+
+# --- Added Functions ---
+def save_dataframe_as_pickle(df, filepath):
+    """
+    Saves a pandas DataFrame to a pickle file.
+
+    Args:
+        df: The pandas DataFrame to save.
+        filepath: The path to the pickle file (e.g., 'data.pkl').
+    """
+    try:
+        with open(filepath, 'wb') as f:
+            pickle.dump(df, f)
+        print(f"DataFrame saved to {filepath}")
+    except Exception as e:
+        print(f"Error saving DataFrame: {e}")
+
+def load_dataframe_from_pickle(filepath):
+    """
+    Loads a pandas DataFrame from a pickle file.
+
+    Args:
+        filepath: The path to the pickle file.
+
+    Returns:
+        The loaded pandas DataFrame, or None if an error occurs.
+    """
+    try:
+        with open(filepath, 'rb') as f:
+            df = pickle.load(f)
+        return df
+    except FileNotFoundError:
+        print(f"Error: File not found at {filepath}")
+        return None
+    except Exception as e:
+        print(f"Error loading DataFrame: {e}")
+        return None
