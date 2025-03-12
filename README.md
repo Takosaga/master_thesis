@@ -1,4 +1,4 @@
-# Assessing Models with Explainable AI(XAI) with a Human Annotated Hate Speech Text Dataset in Social Media 
+# Assessing Models with Explainable AI (XAI) with a Human Annotated Hate Speech Text Dataset in Social Media 
 
 <a target="_blank" href="https://cookiecutter-data-science.drivendata.org/">
     <img src="https://img.shields.io/badge/CCDS-Project%20template-328F97?logo=cookiecutter" />
