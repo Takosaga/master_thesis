@@ -1,0 +1,30 @@
+\documentclass{article}
+\usepackage{booktabs}
+\usepackage[margin=1in]{geometry}
+
+\begin{document}
+
+\begin{table}[ht]
+\centering
+\begin{tabular}{ll}
+\toprule
+\textbf{DataFrame Column} & \textbf{Description} \\
+\midrule
+\texttt{id\_new} & Created \\
+\texttt{text} & Unaltered original text \\
+\texttt{extracted\_target} & Extracted from original targets \\
+\texttt{label\_hatespeech\_binary\_offensive\_not\_included} & Offensive not considered hate speech (binary) \\
+\texttt{label\_hatespeech\_binary\_offensive\_included} & Offensive included as hate speech (binary) \\
+\texttt{label\_normal\_offensive\_hatespeech} & Normal, offensive, or hate speech (multi-class) \\
+\texttt{platform} & Source of text \\
+\texttt{original\_dataset\_title} & Original dataset name \\
+\texttt{original\_id} & Original dataset ID \\
+\texttt{original\_label} & Original label from dataset \\
+\texttt{original\_target} & Majority-annotated targets \\
+\bottomrule
+\end{tabular}
+\caption{Merged dataset column descriptions}
+\label{tab:merged_columns}
+\end{table}
+
+\end{document}
