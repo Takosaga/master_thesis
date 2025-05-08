@@ -1,0 +1,31 @@
+\documentclass{article}
+\usepackage{booktabs}
+\usepackage{geometry}
+\usepackage{caption}
+\usepackage{graphicx}  % For resizebox
+
+\geometry{margin=1in}
+\title{Consistency Metrics between LIME and SHAP}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\begin{table}[htbp]
+\centering
+\caption{Consistency metrics for LIME and SHAP top-5 features}
+\label{tab:lime_shap_similarity}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lrrrrrrrrrrrr}
+\toprule
+comparison\_type & jaccard\_mean & jaccard\_std & jaccard\_min & jaccard\_max & spearman\_mean & spearman\_std & spearman\_min & spearman\_max & kendall\_mean & kendall\_std & kendall\_min & kendall\_max \\
+\midrule
+lime\_top5\_features & 0.840 & 0.193 & 0.250 & 1.000 & 0.854 & 0.205 & -0.764 & 1.000 & 0.778 & 0.236 & -0.550 & 1.000 \\
+shap\_top5\_features & 1.000 & 0.000 & 1.000 & 1.000 & 1.000 & 0.000 & 1.000 & 1.000 & 1.000 & 0.000 & 1.000 & 1.000 \\
+\bottomrule
+\end{tabular}%
+}
+\end{table}
+
+\end{document}

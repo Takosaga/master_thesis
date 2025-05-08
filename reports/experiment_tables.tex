@@ -1,0 +1,38 @@
+\documentclass{article}
+\usepackage{booktabs}
+\usepackage[margin=1in]{geometry}
+\usepackage{tabularx}
+\usepackage{caption}
+
+\begin{document}
+
+\begin{table}[ht]
+\centering
+\caption{Experimental settings}
+\label{tab:experimental_settings_pdf}
+\begin{tabularx}{\textwidth}{lX}
+\toprule
+\textbf{Setting} & \textbf{Value / Description} \\
+\midrule
+Experiment Type & Single factor experiment \\
+Platform & Google Colab T4 GPUs \\
+Seeds & 0, 42, 123, 2025 (for \texttt{random}, \texttt{numpy}, \texttt{torch}, CUDA) \\
+Model & Cardiff (\texttt{cardiffnlp/twitter-roberta-base-hate-latest}) \\
+Prediction Method & HuggingFace \texttt{transformers.pipeline} (\texttt{text-classification}) \\
+Batch Size & 512 \\
+Dataset Focus & 1\% of the dataset with \texttt{cardiff\_score} $\geq$ 0.95 , divided into quarters of True Positives, True Negatives, False Positives, and False Negatives. Sample size per category: 163. \\
+
+\midrule
+\textbf{LIME Settings} & \\
+\quad Explainer Type & \texttt{LimeTextExplainer} \\
+\quad Other Settings & Default values used \\
+\midrule
+\textbf{SHAP Settings} & \\
+\quad Explainer Type & \texttt{shap.Explainer} \\
+\quad Masker & \texttt{shap.maskers.Text} with corresponding model tokenizer \\
+\quad Other Settings & Default values used \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\end{document}
