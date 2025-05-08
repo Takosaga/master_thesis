@@ -1,0 +1,47 @@
+\documentclass{article}
+\usepackage{amsmath} % For math environments and symbols
+\usepackage[margin=1in]{geometry} % Optional: for page margins
+
+\begin{document}
+
+\section*{Jaccard Similarity}
+
+The Jaccard Similarity measures the similarity between two finite sets, $A$ and $B$:
+$$J(A, B) = \frac{|A \cap B|}{|A \cup B|}$$
+
+In terms of True Positives (TP), False Positives (FP), and False Negatives (FN):
+$$J = \frac{\text{TP}}{\text{TP} + \text{FP} + \text{FN}}$$
+
+\section*{Spearman Rank Correlation Coefficient ($\rho$ or $r_s$)}
+
+Spearman's rank correlation coefficient assesses monotonic relationships. If $d_i$ is the difference between the ranks of corresponding values for $n$ observations (with no tied ranks):
+$$\rho = 1 - \frac{6 \sum d_i^2}{n(n^2 - 1)}$$
+
+When ties are present, the formula using Pearson correlation on the ranks ($rg_X, rg_Y$) is:
+$$r_s = \frac{\text{cov}(rg_X, rg_Y)}{\sigma_{rg_X} \sigma_{rg_Y}}$$
+where $\text{cov}(rg_X, rg_Y)$ is the covariance of the rank variables, and $\sigma_{rg_X}$ and $\sigma_{rg_Y}$ are their standard deviations.
+
+\section*{Kendall's Tau Coefficient ($\tau$)}
+
+Kendall's Tau coefficient measures ordinal association.
+
+\subsection*{Kendall's Tau-a (does not account for ties)}
+$$ \tau_A = \frac{n_c - n_d}{\frac{1}{2} n (n-1)} $$
+Where:
+\begin{itemize}
+    \item $n_c$: number of concordant pairs
+    \item $n_d$: number of discordant pairs
+    \item $n$: number of observations
+\end{itemize}
+
+\subsection*{Kendall's Tau-b (accounts for ties)}
+$$ \tau_B = \frac{n_c - n_d}{\sqrt{(n_c + n_d + T_X)(n_c + n_d + T_Y)}} $$
+Where:
+\begin{itemize}
+    \item $n_c$: number of concordant pairs
+    \item $n_d$: number of discordant pairs
+    \item $T_X$: number of pairs tied only on the X variable
+    \item $T_Y$: number of pairs tied only on the Y variable
+\end{itemize}
+
+\end{document}
