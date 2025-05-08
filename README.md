@@ -1,4 +1,4 @@
-# Analysis of black-box models with Explainable AI using an Hatespeech Dataset in Social Media
+# Evaluating the Consistency of Explainable AI Methods in Hate Speech Detection
 
 <a target="_blank" href="https://cookiecutter-data-science.drivendata.org/">
     <img src="https://img.shields.io/badge/CCDS-Project%20template-328F97?logo=cookiecutter" />
