@@ -1,0 +1,30 @@
+\documentclass{article}
+\usepackage{plantuml}
+\usepackage{graphicx} % For scaling the image if needed
+
+\begin{document}
+
+\section{Activity Diagram for ML/DL Workflow}
+
+\begin{plantuml}
+|ML/DL Models|
+start
+:Social Media Data;
+:Data Preprocessing\n& Cleaning;
+:Feature Engineering\n& Extraction;
+:Model Selection;
+:Model Training;
+:Model Evaluation\n& Validation;
+:Prediction / Classification;
+
+|XAI Methods|
+:Select single instances of text;
+:\tExplainable AI (XAI)\nPost-hoc Methods Application;
+:XAI Output\n(Interpretation);
+
+stop
+@enduml
+
+\end{plantuml}
+
+\end{document}
