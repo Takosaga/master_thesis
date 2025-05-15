@@ -1,4 +1,4 @@
-# Evaluating the Consistency of Explainable AI Methods in Hate Speech Detection
+# Evaluating the Consistency of Explainable AI Methods in Hate Speech Detection on Social Media Platforms
 
 <a target="_blank" href="https://cookiecutter-data-science.drivendata.org/">
     <img src="https://img.shields.io/badge/CCDS-Project%20template-328F97?logo=cookiecutter" />
