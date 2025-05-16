@@ -4,7 +4,7 @@
     <img src="https://img.shields.io/badge/CCDS-Project%20template-328F97?logo=cookiecutter" />
 </a>
 
-Hypothesis: The consistency of XAI explanations in hate speech detection varies across different XAI methods and is influenced by the initial seed of the XAI method.
+TODO: Make the readme to fit as the appendix to be refered to as part of master thesis
 
 ## Project Organization
 
