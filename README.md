@@ -104,33 +104,41 @@ This project demonstrates proficiency in numerous technical skills valuable in d
 
 ![image](https://github.com/user-attachments/assets/bc3285ec-59e1-4c7c-948f-c1598d9f91fe)
 
-Notebook 01 was used for analysis on the eligible studies, but was reduced to the 13 included studies about hate speech.
+01 was used for analysis on the eligible studies, but was reduced to the 13 included studies about hate speech.
 
 ### Section 2.1 
 
-Notebook 02, 03, and 04 were used to understand the datasets
+02, 03, and 04 were used to understand the datasets
 
-Notebook 05 was to understanding and preparing how to align datasets
+05 was to understanding and preparing how to align datasets
 
-Notebook 06 merged datasets
+06 merged datasets
 
 ### Section 2.2
 
-Notebook 07 for EDA
+07 for EDA
 
 ### Section 2.3
 
-Notebook 08 and 09 was understanding the models and for original experiment that was not used in this thesis. 09 contains the performance of the CardiffNLP and Facebook models. 
+08 and 09 was understanding the models and for original experiment that was not used in this thesis. 09 contains the performance of the CardiffNLP and Facebook models. 
 
 ### Section 2.5
 
-Notebook 10c is the final code used on Google Colab to gather experiment data
+10c is the final code used on Google Colab to gather experiment data
 
 ### Section 3.1
 
-Notebook 11b and 11c were the single samples 
+11b and 11c were the single samples 
 
 ### Section 3.2 and 3.3
 
-Notebook 11 contains aggregated data from experiment results
+11 contains aggregated data from experiment results
 
+## Future Directions
+
+This research opens several promising avenues for future work:
+
+- Evaluation of additional XAI methods beyond LIME and SHAP
+- Investigation of consistency across different model architectures and training regimes
+- Development of more robust explanation methods specifically designed for content moderation
+- Integration of user studies to evaluate the practical utility of explanations for content moderators
