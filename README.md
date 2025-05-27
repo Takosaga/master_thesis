@@ -4,6 +4,8 @@
     <img src="https://img.shields.io/badge/CCDS-Project%20template-328F97?logo=cookiecutter" />
 </a>
 
+[Kanban Board](https://github.com/users/Takosaga/projects/3)
+
 ## Project Overview
 
 This repository contains the complete codebase, data processing, and analysis for my master's thesis on evaluating the consistency of Explainable Artificial Intelligence (XAI) methods when applied to hate speech detection models. As social media platforms increasingly rely on AI systems to detect and moderate harmful content at scale, the need for transparent and reliable explanations of these automated decisions becomes critical. This research addresses a significant gap in the field by systematically evaluating how consistent XAI methods are when explaining hate speech detection models.
