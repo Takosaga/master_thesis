@@ -134,6 +134,17 @@ This project demonstrates proficiency in numerous technical skills valuable in d
 
 11 contains aggregated data from experiment results
 
+## Reproduction and Extension
+
+To reproduce the results or extend this research:
+
+1. Clone this repository
+2. Install the required dependencies using the provided `environment.yml` file
+3. Follow the notebooks in sequential order to process data, train models, and generate explanations
+4. Explore the evaluation metrics and visualization tools to analyze explanation consistency
+
+The modular design of this project makes it straightforward to extend with additional datasets, models, or XAI methods.
+
 ## Future Directions
 
 This research opens several promising avenues for future work:
