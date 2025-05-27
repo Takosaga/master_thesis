@@ -30,8 +30,8 @@
 ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
 │   └── figures        <- Generated graphics and figures to be used in reporting
 │
-├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
-│                         generated with `pip freeze > requirements.txt`
+├── enviroment.yml   <- The requirements file for reproducing the analysis environment
+│                         
 │
 ├── setup.cfg          <- Configuration file for flake8
 │
