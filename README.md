@@ -16,6 +16,23 @@ Notebook 01 was used for analysis on the eligible studies, but was reduced to th
 
 ### Section 2.1 
 
+Notebook 02, 03, and 04 were used to understand the datasets
+
+Notebook 05 was to understanding and preparing how to align datasets
+
+Notebook 06 merged datasets
+
+### Section 2.2
+
+Notebook 07 for EDA
+
+### Section 2.3
+
+Notebook 08 and 09 was understanding the models and for original experiment that was not used in this thesis. 09 contains the performance of the CardiffNLP and Facebook models. 
+
+### Section 2.5
+
+Notebook 10c is the final code used on Google Colab to gather experiment data
 
 ## Project Organization
 
