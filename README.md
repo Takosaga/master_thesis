@@ -40,10 +40,10 @@ These visualizations not only support the quantitative findings but also provide
 
 ## Key Findings
 
-The research yielded several important findings regarding XAI consistency in hate speech detection:
+The research yielded the following findings regarding XAI consistency in hate speech detection:
 
 - SHAP generally provides more consistent explanations than LIME across multiple runs, confirming the initial research hypothesis
-- Explanation consistency varies across different prediction scenarios (true positives, true negatives, false positives, false negatives)
+- Explanation consistency varies across different prediction scenarios for LIME (true positives, true negatives, false positives, false negatives)
 
 ## Technical Skills Demonstrated
 
