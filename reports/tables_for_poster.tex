@@ -1,0 +1,27 @@
+\documentclass{article}
+\usepackage{booktabs}
+\usepackage[margin=1in]{geometry}
+\usepackage{caption}
+\usepackage{array}
+
+\begin{document}
+
+\begin{table}[ht]
+\centering
+\caption{Aggregated Consistency Metrics (Mean \& Standard Deviation)}
+\label{tab:consistency_metrics}
+\begin{tabular}{lccc}
+\toprule
+\textbf{XAI Method} & \textbf{Jaccard Similarity Mean (std)} & \textbf{Spearman's $\rho$ Mean (std)} & \textbf{Kendall's $\tau_b$ Mean (std)} \\
+\midrule
+\textbf{LIME} & 0.835 (0.193) & 0.851 (0.206) & 0.776 (0.235) \\
+\textbf{SHAP} & 1.000 (0.000) & 1.000 (0.000) & 1.000 (0.000) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+
+
+
+\end{document}
