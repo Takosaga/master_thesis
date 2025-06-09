@@ -1,6 +1,8 @@
 \documentclass{article}
 \usepackage{booktabs}
 \usepackage[margin=1in]{geometry}
+\usepackage{caption}
+\usepackage{array}
 
 \begin{document}
 
@@ -50,6 +52,34 @@ Batch Size & 512 \\
 \end{tabular}
 \caption{Unified experimental settings for LIME and SHAP explanations}
 \label{tab:unified_settings}
+\end{table}
+
+
+\begin{table}[ht]
+\centering
+\caption{Consolidated Experiment Settings and XAI Parameters}
+\label{tab:combined_experiment_settings}
+\begin{tabular}{llp{10cm}}
+\toprule
+\textbf{Component} & \textbf{Setting} & \textbf{Value / Description} \\
+\midrule
+\textbf{General} 
+& Seeds & 4 random seeds between 0 and 100000: [83811, 14593, 3279, 97197] (used for random, numpy, torch, CUDA) \\
+& Model & CardiffNLP (\texttt{cardiffnlp/twitter-roberta-base-hate-latest}) \\
+& Dataset Focus & 1\% of the dataset with \texttt{cardiff.score}~$\geq$~0.95, divided into quarters of True Positives, True Negatives, False Positives, and False Negatives. Sample size per category: 163. \\
+\addlinespace
+\textbf{LIME} 
+& Explainer Type & \texttt{LimeTextExplainer} \\
+& random\_state & Same as experimental seeds: [83811, 14593, 3279, 97197] \\
+& Other Settings & Default values used \\
+\addlinespace
+\textbf{SHAP} 
+& Explainer Type & \texttt{shap.Explainer} \\
+& Masker & \texttt{shap.maskers.Text} with corresponding model tokenizer \\
+& seed & Same as experimental seeds: [83811, 14593, 3279, 97197] \\
+& Other Settings & Default values used \\
+\bottomrule
+\end{tabular}
 \end{table}
 
 \end{document}
