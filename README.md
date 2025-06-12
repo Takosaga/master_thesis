@@ -10,7 +10,7 @@
 
 This repository contains the complete codebase, data processing, and analysis for my master's thesis on evaluating the consistency of Explainable Artificial Intelligence (XAI) methods when applied to hate speech detection models. As social media platforms increasingly rely on AI systems to detect and moderate harmful content at scale, the need for transparent and reliable explanations of these automated decisions becomes critical. This research addresses a significant gap in the field by systematically evaluating how consistent XAI methods are when explaining hate speech detection models.
 
-The research specifically focuses on comparing two popular post-hoc explanation techniques: Local Interpretable Model-agnostic Explanations (LIME) and SHapley Additive exPlanations (SHAP). By applying rigorous quantitative and qualitative evaluation methodologies, this project provides insights into the consistency of these explanation methods in the context of content moderation.
+The research specifically focuses on comparing two popular post-hoc explanation techniques: Local Interpretable Model-agnostic Explanations (LIME) and SHapley Additive exPlanations (SHAP). By applying quantitative and qualitative evaluation methodologies, this project provides insights into the consistency of these explanation methods in the context of hate speech detection.
 
 ### Data Processing and Analysis
 
@@ -149,7 +149,7 @@ The modular design of this project makes it straightforward to extend with addit
 
 ## Future Directions
 
-This research opens several promising avenues for future work:
+This research opens several avenues for future work:
 
 - Evaluation of additional XAI methods beyond LIME and SHAP
 - Investigation of consistency across different model architectures and training regimes
