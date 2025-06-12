@@ -20,6 +20,10 @@ Exploratory data analysis provides insights into class distributions, platform r
 
 ### Model Selection and XAI Implementation
 
+![](https://github.com/Takosaga/master_thesis/blob/main/reports/figures/classification_process_XAI2.svg)
+
+![]()
+
 The research utilizes the CardiffNLP model, a RoBERTa-based architecture specifically fine-tuned for hate speech detection. This state-of-the-art transformer model serves as the base classifier for which explanations are generated and evaluated.
 
 The implementation includes:
@@ -51,7 +55,6 @@ The research yielded the following findings regarding XAI consistency in hate sp
 
 This project demonstrates proficiency in numerous technical skills valuable in data science and AI development roles:
 
-- **Natural Language Processing**: Implementation of transformer-based models for text classification
 - **Explainable AI**: Integration and evaluation of state-of-the-art explanation techniques for black-box models
 - **Data Analysis**: Comprehensive exploratory data analysis and statistical evaluation of results
 - **Data Visualization**: Creation of informative and intuitive visualizations to communicate complex findings
