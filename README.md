@@ -10,7 +10,7 @@
 
 This repository contains the complete codebase, data processing, and analysis for my master's thesis on evaluating the consistency of Explainable Artificial Intelligence (XAI) methods when applied to hate speech detection models. As social media platforms increasingly rely on AI systems to detect and moderate harmful content at scale, the need for transparent and reliable explanations of these automated decisions becomes critical. This research addresses a significant gap in the field by systematically evaluating how consistent XAI methods are when explaining hate speech detection models.
 
-The research specifically focuses on comparing two popular post-hoc explanation techniques: Local Interpretable Model-agnostic Explanations (LIME) and SHapley Additive exPlanations (SHAP). By applying rigorous quantitative and qualitative evaluation methodologies, this project provides insights into the consistency of these explanation methods in the context of content moderation.
+The research specifically focuses on comparing two popular post-hoc explanation techniques: Local Interpretable Model-agnostic Explanations (LIME) and SHapley Additive exPlanations (SHAP). By applying quantitative and qualitative evaluation methodologies, this project provides insights into the consistency of these explanation methods in the context of hate speech detection.
 
 ### Data Processing and Analysis
 
@@ -19,6 +19,11 @@ The project aggregates multiple hate speech datasets (HateXplain, MLMA, and Meas
 Exploratory data analysis provides insights into class distributions, platform representation, and target demographics, establishing a solid foundation for subsequent modeling and evaluation.
 
 ### Model Selection and XAI Implementation
+
+![image](https://github.com/user-attachments/assets/6a7e2c41-7de5-4a69-886b-61aebaff5cc1)
+
+![image](https://github.com/user-attachments/assets/5ecd5ca4-d1a6-4964-a610-dd03967ed895)
+
 
 The research utilizes the CardiffNLP model, a RoBERTa-based architecture specifically fine-tuned for hate speech detection. This state-of-the-art transformer model serves as the base classifier for which explanations are generated and evaluated.
 
@@ -31,6 +36,10 @@ The implementation includes:
 
 
 ### Visualization and Evaluation
+
+![image](https://github.com/user-attachments/assets/a1826f97-95fb-4ecb-b750-75e522b97969)
+
+![image](https://github.com/user-attachments/assets/71e022b6-ce6a-41e8-9c29-adfe56582fb1)
 
 The project features comprehensive visualization techniques to represent explanation consistency, including:
 
@@ -51,7 +60,6 @@ The research yielded the following findings regarding XAI consistency in hate sp
 
 This project demonstrates proficiency in numerous technical skills valuable in data science and AI development roles:
 
-- **Natural Language Processing**: Implementation of transformer-based models for text classification
 - **Explainable AI**: Integration and evaluation of state-of-the-art explanation techniques for black-box models
 - **Data Analysis**: Comprehensive exploratory data analysis and statistical evaluation of results
 - **Data Visualization**: Creation of informative and intuitive visualizations to communicate complex findings
@@ -149,7 +157,7 @@ The modular design of this project makes it straightforward to extend with addit
 
 ## Future Directions
 
-This research opens several promising avenues for future work:
+This research opens several avenues for future work:
 
 - Evaluation of additional XAI methods beyond LIME and SHAP
 - Investigation of consistency across different model architectures and training regimes
